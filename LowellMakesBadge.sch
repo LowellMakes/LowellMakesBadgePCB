@@ -2172,7 +2172,7 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <parts>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="BAT1" library="SparkFun" deviceset="BATTERY" device="12MM"/>
+<part name="BAT1" library="SparkFun" deviceset="BATTERY" device="12PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -2202,9 +2202,9 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <wire x1="60.96" y1="45.72" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="27.94" y1="38.1" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="BAT1" gate="G$1" pin="-"/>
 <wire x1="0" y1="53.34" x2="0" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="0" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="BAT1" gate="G$1" pin="-"/>
 </segment>
 </net>
 </nets>
