@@ -136,7 +136,7 @@
 </layers>
 <board>
 <plain>
-<text x="67.6148" y="52.197" size="1.778" layer="16" rot="MR0">Lowell Makes Badge v1</text>
+<text x="67.6148" y="52.197" size="1.778" layer="16" rot="MR0">Lowell Makes Badge v2.0</text>
 <circle x="52.2478" y="36.8808" radius="24.4191625" width="0.0508" layer="20"/>
 <rectangle x1="49.7205" y1="23.4315" x2="49.8475" y2="23.5585" layer="48"/>
 <rectangle x1="49.9745" y1="23.4315" x2="51.6255" y2="23.5585" layer="48"/>
