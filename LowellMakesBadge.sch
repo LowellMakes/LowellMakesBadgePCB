@@ -2413,9 +2413,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <pad name="P$1" x="0" y="4" drill="1"/>
 <pad name="P$2" x="0" y="-4" drill="1"/>
-<wire x1="2" y1="1" x2="5" y2="1" width="0.127" layer="21"/>
-<wire x1="5" y1="1" x2="5" y2="-1" width="0.127" layer="21"/>
-<wire x1="5" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.81" y1="1" x2="-5" y2="1" width="0.127" layer="21"/>
+<wire x1="-5" y1="1" x2="-5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-1.81" y2="-1" width="0.127" layer="21"/>
 </package>
 <package name="AYZ0202">
 <description>&lt;b&gt;DPDT Slide Switch SMD&lt;/b&gt;
@@ -4078,6 +4078,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="LED5" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="S1" library="LowellMakesEagleLibrary" deviceset="SWITCH-SPDT" device="PTH"/>
+<part name="R6" library="SparkFun" deviceset="RESISTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4100,6 +4101,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="LED5" gate="G$1" x="73.66" y="55.88"/>
 <instance part="JP1" gate="G$1" x="78.74" y="73.66"/>
 <instance part="S1" gate="1" x="15.24" y="71.12"/>
+<instance part="R6" gate="G$1" x="76.2" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -4108,8 +4110,13 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="68.58" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="35.56" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<junction x="55.88" y="68.58"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4242,20 +4249,29 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="154.94" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$2" gate="U$1" pin="PB4"/>
+<wire x1="86.36" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,0,53.34,BAT1,-,GND,,,"/>
 <approved hash="104,1,0,63.5,BAT1,+,BATT,,,"/>
-<approved hash="113,1,61.2817,57.15,LED1,,,,,"/>
+<approved hash="113,1,61.2817,54.61,LED1,,,,,"/>
 <approved hash="113,1,1.71873,58.42,BAT1,,,,,"/>
-<approved hash="113,1,16.51,69.8585,S1,,,,,"/>
 <approved hash="113,1,155.262,39.37,LED2,,,,,"/>
 <approved hash="113,1,145.102,39.37,LED3,,,,,"/>
 <approved hash="113,1,134.942,39.37,LED4,,,,,"/>
 <approved hash="113,1,73.9817,54.61,LED5,,,,,"/>
 <approved hash="113,1,76.4371,76.3312,JP1,,,,,"/>
+<approved hash="113,1,16.51,69.8585,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

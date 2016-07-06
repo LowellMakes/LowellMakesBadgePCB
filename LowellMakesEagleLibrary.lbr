@@ -4936,9 +4936,9 @@
 <text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <pad name="P$1" x="0" y="4" drill="1"/>
 <pad name="P$2" x="0" y="-4" drill="1"/>
-<wire x1="2" y1="1" x2="5" y2="1" width="0.127" layer="21"/>
-<wire x1="5" y1="1" x2="5" y2="-1" width="0.127" layer="21"/>
-<wire x1="5" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.81" y1="1" x2="-5" y2="1" width="0.127" layer="21"/>
+<wire x1="-5" y1="1" x2="-5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-1.81" y2="-1" width="0.127" layer="21"/>
 </package>
 <package name="AYZ0202">
 <description>&lt;b&gt;DPDT Slide Switch SMD&lt;/b&gt;
