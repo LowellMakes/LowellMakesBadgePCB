@@ -144,7 +144,7 @@
 <board>
 <plain>
 <hole x="25" y="47" drill="3.2"/>
-<text x="39.246" y="42.516" size="1.4224" layer="32" font="vector" ratio="17" rot="MR0">Lowell Makes Badge V2.0</text>
+<text x="39.246" y="42.516" size="1.4224" layer="26" font="vector" ratio="17" rot="MR0">Lowell Makes Badge V2.0</text>
 <wire x1="0" y1="25" x2="50" y2="25" width="0.4064" layer="20" curve="-180"/>
 <wire x1="50" y1="25" x2="0" y2="25" width="0.4064" layer="20" curve="-180"/>
 </plain>
