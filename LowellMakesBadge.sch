@@ -4142,7 +4142,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="BAT1" library="SparkFun" deviceset="BATTERY" device="12PTH"/>
-<part name="U$2" library="LowellMakesEagleLibrary" deviceset="ATTINY85" device=""/>
+<part name="U1" library="LowellMakesEagleLibrary" deviceset="ATTINY85" device=""/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="PTH1" value="51"/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device=""/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device=""/>
@@ -4165,7 +4165,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="LED1" gate="G$1" x="60.96" y="55.88"/>
 <instance part="GND1" gate="1" x="27.94" y="35.56"/>
 <instance part="BAT1" gate="G$1" x="0" y="58.42" rot="R270"/>
-<instance part="U$2" gate="U$1" x="114.3" y="76.2"/>
+<instance part="U1" gate="U$1" x="114.3" y="76.2"/>
 <instance part="R1" gate="G$1" x="48.26" y="68.58"/>
 <instance part="R2" gate="G$1" x="86.36" y="78.74" rot="R180"/>
 <instance part="R3" gate="G$1" x="152.4" y="78.74"/>
@@ -4237,7 +4237,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="VCC"/>
+<pinref part="U1" gate="U$1" pin="VCC"/>
 <wire x1="129.54" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <label x="134.62" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -4252,7 +4252,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB5/RST"/>
+<pinref part="U1" gate="U$1" pin="PB5/RST"/>
 <label x="88.9" y="83.82" size="1.778" layer="95"/>
 <wire x1="83.82" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -4264,7 +4264,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="PB0/MOSI" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB0"/>
+<pinref part="U1" gate="U$1" pin="PB0"/>
 <wire x1="129.54" y1="68.58" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
 <label x="129.54" y="68.58" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -4277,7 +4277,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="PB1/MISO" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB1"/>
+<pinref part="U1" gate="U$1" pin="PB1"/>
 <label x="129.54" y="73.66" size="1.778" layer="95"/>
 <wire x1="154.94" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -4290,7 +4290,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="PB2/SCK" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB2"/>
+<pinref part="U1" gate="U$1" pin="PB2"/>
 <wire x1="129.54" y1="78.74" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="129.54" y="78.74" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -4328,7 +4328,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB4"/>
+<pinref part="U1" gate="U$1" pin="PB4"/>
 <wire x1="99.06" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
@@ -4338,7 +4338,7 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$2" gate="U$1" pin="PB3"/>
+<pinref part="U1" gate="U$1" pin="PB3"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 </segment>
